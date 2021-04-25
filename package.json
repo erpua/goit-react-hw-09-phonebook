@@ -34,5 +34,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@reduxjs/toolkit": "^1.5.1",
+    "axios": "^0.21.1",
+    "husky": "^4.3.7",
+    "lint-staged": "^9.4.2",
+    "modern-normalize": "^1.0.0",
+    "prettier": "^2.2.1",
+    "prop-types": "^15.7.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "uuid": "^8.3.2"
   }
 }
