@@ -1,0 +1,15 @@
+.wrapper {
+  min-height: 100vh;
+  background-image: url('../../img/backgound_home.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: grey;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  font-style: italic;
+}

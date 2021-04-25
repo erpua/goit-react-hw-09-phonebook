@@ -1,0 +1,72 @@
+/* 
+.link {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnContainer {
+  display: flex;
+}
+
+.editInput {
+  width: 280px;
+  color: #525252;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+  outline: 0;
+}
+ */
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  align-items: center;
+}
+
+.btnContainer {
+  display: flex;
+}
+
+.editInput {
+  width: 280px;
+  color: #525252;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+  outline: 0;
+}
+
+.editInput:hover {
+  border: 2px solid #6dabf2;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.save,
+.cancel,
+.edit,
+.delete {
+  cursor: pointer;
+  padding: 4px;
+  color: #fff;
+  background-color: #5591f3;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.edit,
+.delete {
+  margin-right: 4px;
+}
+
+.save:hover,
+.cancel:hover,
+.edit:hover,
+.delete:hover {
+  background-color: #70777c;
+}
