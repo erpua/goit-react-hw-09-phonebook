@@ -3,13 +3,7 @@ import { connect } from 'react-redux';
 import { Switch } from 'react-router';
 import AppBar from './components/AppBar';
 import authOperations from './redux/auth/auth-operations';
-/* import Container from './components/Container';
-import HomeView from './views/HomeView/HomeView';
-import RegisterView from './views/RegisterView/RegisterView';
-import LoginView from './views/LoginView/LoginView';
-import ContactsView from './views/ContactsView/ContactsView';
-import SignInView from './views/LoginView/SignInView';
-import SignUpView from './views/RegisterView/SignUpView'; */
+
 import './global.css';
 import PrivateRoute from './components/Routes/PrivateRoute';
 import PublicRoute from './components/Routes/PublicRoute';
