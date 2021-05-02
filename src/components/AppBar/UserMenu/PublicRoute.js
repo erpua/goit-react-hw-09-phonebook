@@ -3,11 +3,6 @@ import { connect } from 'react-redux';
 import { Redirect, Route } from 'react-router';
 import authSelectors from '../../../redux/auth/auth-selectors';
 
-/**
- * * Якщо маршрут обмежений, і користувач залогінений, рендерить редирект на /contacts
- * * В іншому випадку рендерить компонент
- */
-
 const PublicRoute = ({
   component: Component,
   isAuthenticated,

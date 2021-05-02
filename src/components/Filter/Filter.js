@@ -1,38 +1,3 @@
-/* import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import f from './Filter.module.css';
-import { filterContacts } from '../../redux/contacts/contacts-actions';
-import { getFilter } from '../../redux/contacts/contacts-selectors';
-
-const Filter = ({ filter, onChange }) => (
-  <>
-    <input
-      className={f.filter}
-      type="text"
-      name="filter"
-      value={filter}
-      onChange={onChange}
-      placeholder="Search name..."
-    />
-  </>
-);
-
-Filter.propTypes = {
-  filter: PropTypes.string,
-  onChange: PropTypes.func,
-};
-
-const mapStateToProps = state => ({
-  filter: getFilter(state),
-});
-
-const mapDispatchToProps = dispatch => ({
-  onChange: e => dispatch(filterContacts(e.target.value)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Filter);
- */
-
 import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -72,7 +37,6 @@ const useStyles = makeStyles(theme => ({
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
     transition: theme.transitions.create('width'),
     width: '100%',
@@ -81,16 +45,6 @@ const useStyles = makeStyles(theme => ({
     },
   },
 }));
-
-// const mapStateToProps = state => ({
-//   filter: contactsSelectors.getFilter(state),
-// });
-
-// const mapDispatchToProps = {
-//   onChange: contactsActions.filterContacts,
-// };
-
-// export default connect(mapStateToProps, mapDispatchToProps)(Filter);
 
 export default function Filter() {
   const classes = useStyles();

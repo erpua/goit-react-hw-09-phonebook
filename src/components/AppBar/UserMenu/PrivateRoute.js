@@ -3,11 +3,6 @@ import { Redirect, Route } from 'react-router';
 import { connect } from 'react-redux';
 import authSelectors from '../../../redux/auth/auth-selectors';
 
-/**
- * Якщо маршрут приватний і користувач зологінений , рендерить компонент
- * В іншому випадку рендерить Redirect на /login
- */
-
 const PrivateRoute = ({
   component: Component,
   isAuthenticated,
