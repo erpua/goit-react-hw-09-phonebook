@@ -90,7 +90,7 @@ export default function Contacts() {
 
   return (
     <ul className="container">
-      {isLoading && <h1>Загрузка</h1>}
+      {isLoading && <h1>Downloading...</h1>}
       {contacts.map(({ name, number, id }) => (
         <li key={id} className={c.link}>
           {inEditMode.status && inEditMode.rowKey === id ? (

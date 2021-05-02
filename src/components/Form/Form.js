@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import contactsSelectors from '../../redux/contacts/contacts-selectors';
 import contactsOperations from '../../redux/contacts/contacts-operations';
-import f from './Form.module.css';
+import styles from './Form.module.css';
 import PropTypes from 'prop-types';
 import { IconButton, TextField } from '@material-ui/core';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
@@ -46,7 +46,7 @@ export default function Form() {
   };
 
   return (
-    <form className={f.form} onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <TextField
         multiline
         margin="normal"
@@ -75,7 +75,7 @@ export default function Form() {
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         title="The phone number must be 11-12 digits and can contain numbers, spaces, dashes, bully brackets and can start with +"
       />
-      <IconButton type="submit" className={f.btn}>
+      <IconButton type="submit" className={styles.btn}>
         <PersonAddIcon fontSize="large" />
       </IconButton>
     </form>
