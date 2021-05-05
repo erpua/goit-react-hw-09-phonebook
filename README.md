@@ -70,5 +70,3 @@ DEPLOY AT GITHUB
 - add repository root to GitHub Website link
 
 ---
-
-\{^\_^}/ hi!
